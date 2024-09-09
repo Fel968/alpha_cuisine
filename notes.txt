@@ -1,0 +1,8 @@
+Read about unicode characters for check mark
+read about grid and flex
+understand how to use grid. use w3schools
+hover
+z-index
+
+git init
+git add .

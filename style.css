@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+/* revisit */
+.menu {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  /* use top, left for absolute  positioning items on the page */
+  /* what does the overflow tag do */
+  top: 0px;
+  left: 0px;
+  z-index: 50; /* so that nav bar doesn't disappear */
+}
+/* revisit */
+.menu_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  column-gap: 50px;
+  width: 60%;
+}
+.black_colors {
+  color: black;
+}
+#dot {
+  color: orangered;
+}
+/* revisit */
+.Logo {
+  font-size: 30px;
+}
+.hero {
+  background-image: url("images/hero_pic.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* make background fixed */
+  background-attachment: fixed;
+  /* row-gap: 50px; */
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*read about align-items and justify-content command */
+  justify-content: center;
+  /* use rgba instead of opacity to prevent universal effect */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#hero_title {
+  color: white;
+  font-size: 3.2rem;
+}
+#hero_subtext {
+  color: white;
+  font-size: 1.5rem;
+}
+#hero_button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+.foods {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  row-gap: 40px;
+}
+.header {
+  width: 60%;
+  /* use text-align to align text */
+  text-align: center;
+  /* if you don't add flex direction, you can't use the gap tag */
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.header_h2 {
+  font-size: 2.5rem;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.gallery_item {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.gallery_item img {
+  width: 100%;
+  height: 90%;
+  object-fit: fill;
+  overflow: hidden;
+  /* background size: 20%; */
+  /* how to reduce image size */
+}
+/* overlay is for text */
+.gallery_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0; /*resets the background color*/
+}
+.gallery_overlay:hover {
+  /*use hover to program how object should look like when hovered on*/
+  opacity: 1;
+}
+#features {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem 0;
+  padding: 0 10rem;
+  column-gap: 3rem;
+}
+.feature_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.feature_item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.feature_title {
+  color: orangered;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.feature_list li {
+  display: flex;
+  column-gap: 20px;
+}
+#footer {
+  height: 80vh;
+  overflow: hidden;
+}
+#blue_footer {
+  background-color: #32dbc6;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20%;
+}
+#black_container {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-evenly;
+  /* column-gap: 30px; */
+  width: 100vw;
+  height: 80%;
+  padding-top: 100px;
+}
+.about_us {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  row-gap: 20px;
+  width: 20%;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 20%;
+}
+.follow_us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 20%;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 20%;
+}
