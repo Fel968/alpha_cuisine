@@ -310,4 +310,7 @@
 }
 
 .horizontal_line{
+  /* border-width: 10px; */
+  height: 10px;
+  border-color: black;
 }
