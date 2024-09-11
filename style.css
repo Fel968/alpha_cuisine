@@ -194,6 +194,8 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* blue footer text not aligning in the center. */
@@ -307,15 +309,5 @@
   padding-left: 10px;
 }
 
-/* giving me issues */
 .horizontal_line{
-width: 100%;
-height: 1px;
-border: 0 none;
-background-color: white;
-/* margin-right: auto;
-margin-left: auto; */
-/* margin-top: 10px; */
-padding-top: 50px ;
-padding-bottom: 50px;
 }
