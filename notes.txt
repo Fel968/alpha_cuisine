@@ -9,3 +9,5 @@ initialise: git init
 add all files in the open folder: git add .  (use file path instead of . when you want to specify a particular file)
 commit
 push
+
+read about cloning files from github
